@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bora perder uma grana online</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=VT323&display=swap" rel="stylesheet"> 
+    <!-- <link href="./style.css" rel="stylesheet">  -->
+    <!-- <link href="./style.css" rel="stylesheet">  -->
+    <script src="./index.js" type="module" defer></script>  <!-- Isso me acontece frequentemente, o JS trata como se não existisse o elemento // DEFER É A SOLUÇÃO -->
+    <script src="./render.js" type="module" defer></script>  <!-- Isso me acontece frequentemente, o JS trata como se não existisse o elemento // DEFER É A SOLUÇÃO -->
+</head>
+<body>
+    <div class="jumbotron col-xl-8 col-lg-12 mx-auto my-5 bg-dark text-light d-flex flex-column justify-content-between align-items-center">
+        <!-- <div id="display" class="col-8 mx-auto mb-5 px-2 py-5 text-center">
+            <span id="display-child" class="h1">Oi</span>
+        </div> -->
+        <h1 class="mb-5">Jogo do Porco</h1>
+        <div class="d-flex flex-wrap col-8 h-100 justify-content-around mb-5" id="playerList">
+            <div class="card bg-white text-dark text-center align-items-center justify-content-center p-2">
+                <p class="h5 mt-1">Jogador 1</p>
+                <p class="">P: 50</p>
+                <h6 class="card-text mb-2"><small class="text-uppercase bg-danger rounded text-white py-1 px-2" id="rodadaN2">Aguarde</small></h6>
+            </div>
+        </div>
+        <div class="d-flex flex-row flex-nowrap col-8 justify-content-center">
+
+            <div class="card col-xl-8 col-md-10 p-0">
+                <div class="card-body d-flex flex-column flex-nowrap">
+                    <h2 class="card-title bg-dark text-light text-center h1 py-5 col-4 mx-auto" id="casa-display">3</h2>
+                    <button class="btn btn-outline-primary m-2 py-3" id="rodar-dados" onclick="casa.rodarDados()">Rodar os Dados</button>
+                    <button class="btn btn-outline-danger m-2 py-3" id="parar" onclick="casa.stopDices()">Parar</button>
+                </div>
+                <span class="card-footer text-dark text-center text-uppercase h4 m-0 pt-5" id="resposta-jogo"></span>
+            </div>
+
+            <div class="card bg-light text-dark text-center col-5 mx-3 d-flex flex-column justify-content-between">
+                <div class="card-body d-flex flex-column justify-content-around">
+                    <h2 class="card-title h1 my-2" id="jogadorN2">Jogador 2</h2>
+                    <h3 class="card-text my-5 h1" id="pontoN2">35</h3>
+                    <div class="card-footer bg-danger text-white d-flex flex-column" id="container-ponto-atualN2">
+                        <span class="mx-3 h5">Banco de Pontos</span>
+                        <span class="mx-3 h1" id="valor-ponto-atualN2">50</span>
+                    </div>
+                </div>
+            </div>
+
+           
+
+        </div>
+    </div>
+</body>
+</html>
